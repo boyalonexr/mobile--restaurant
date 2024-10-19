@@ -80,7 +80,11 @@ section:first-child{
     padding: 20px;
     border-radius: 50%;
     border: 1px solid #dedede;
-    font-family: none;
+}
+
+.fa-light {
+    font-family: none !important;
+    padding: 10px;
 }
 
 .order-receipt h2,
@@ -99,7 +103,7 @@ section:first-child{
 }
 
 .order-receipt .order{
-    padding: 25px 0 15px;
+    padding: 15px 0 12px;
     text-align: center;
 }
 
@@ -147,7 +151,7 @@ section:first-child{
     font-weight: 700;
 }
 
-.complete-btn:hover {
+.complete-btn:hover, .form-btn:hover {
     background-color: #0F8B5B;
 }
 
@@ -202,16 +206,18 @@ input:focus {
 }
 
 .btn-div {
-    padding-top: 1.3rem;
+    margin-top: 1.5rem;
 }
 
 .form-btn {
-    width: 100%;
+    padding: 15px 20px;
     background-color: #16DB99;
     color: white;
-    padding: 15px 20px;
     font-size: 15px;
     font-weight: 700;
+    width: 100%;
+    transition: 1s;
+    cursor: pointer;
     border: none;
 }
 

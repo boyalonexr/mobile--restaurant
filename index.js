@@ -89,13 +89,12 @@ function handleRemoveOrder(orderId) {
 
 function completeOrderBtn() { 
         formContainer.classList.add("show")
-        // formLoading.style.display = 'block'
         formInput.innerHTML = `
         <div class="loading-div" id="loading-div">
             <div><label class="loading-label">Generating Payment Information...</label></div>
             <div><img src="./Pictures/Spin@1x-1.0s-200px-200px.svg" alt="" class="loading"></div>
         </div>`
-    setTimeout(function() {
+    setTimeout(() => {
        formInput.innerHTML = `
         <form class="form" id="form">
                 <div  class="form-text">
@@ -120,15 +119,33 @@ function completeOrderBtn() {
 
 function completePayBtn() {
     if (cardName.value && cardNumber.value && cardCvv.value) {
-        setTimeout(function() {
-            orderReceipt.classList.remove("show");
+        setTimeout(() => {
+        formInput.innerHTML = `
+        <div class="loading-div" id="loading-div">
+            <div><label class="loading-label">Generating Order...</label></div>
+            <div><img src="./Pictures/Spin@1x-1.0s-200px-200px.svg" alt="" class="loading"></div>
+        </div>`
+        });
+        setTimeout(() => {
+             formInput.innerHTML = `
+             <div class="loading-div" id="loading-div">
+             <div><label class="loading-label">Almost there...</label></div>
+            <div><img src="./Pictures/Spin@1x-1.0s-200px-200px.svg" alt="" class="loading"></div>
+        </div>
+            `
+        }, 1500);
+        setTimeout(() => {
             formContainer.classList.remove("show");
+            orderReceipt.classList.remove("show");
             formSubmit.style.display = "block";
     
-            return formSubmit.innerHTML = `
+         formSubmit.innerHTML = `
             <h3>Thanks, ${cardName.value}! Your order is on its way!</h3>
             `
-        })
+        }, 3500)
+
+        console.log(cardName.value);
+        
 }
 }
 
