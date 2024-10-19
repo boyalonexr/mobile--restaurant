@@ -118,7 +118,10 @@ function completeOrderBtn() {
 }
 
 function completePayBtn() {
-    if (cardName.value && cardNumber.value && cardCvv.value) {
+    const cardName = document.getElementById('cardName').value;
+    const cardNumber = document.getElementById('cardNumber').value;
+    const cardCvv = document.getElementById('cardCvv').value;
+    if (cardName && cardNumber && cardCvv) {
         setTimeout(() => {
         formInput.innerHTML = `
         <div class="loading-div" id="loading-div">
@@ -137,15 +140,13 @@ function completePayBtn() {
         setTimeout(() => {
             formContainer.classList.remove("show");
             orderReceipt.classList.remove("show");
-            formSubmit.style.display = "block";
+            formSubmit.classList.add("show");
     
          formSubmit.innerHTML = `
-            <h3>Thanks, ${cardName.value}! Your order is on its way!</h3>
+            <h3>Thanks, ${cardName}! Your order is on its way!</h3>
             `
         }, 3500)
-
-        console.log(cardName.value);
-        
+        console.log(cardName);     
 }
 }
 
