@@ -145,8 +145,13 @@ function completePayBtn() {
          formSubmit.innerHTML = `
             <h3>Thanks, ${cardName}! Your order is on its way!</h3>
             `
-        }, 3500)
-        console.log(cardName);     
+        }, 3500)  
+        setTimeout(() => {
+            formSubmit.classList.remove("show");
+            orderArray = []
+
+        }, 6500)
+        render()
 }
 }
 
