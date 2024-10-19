@@ -47,6 +47,10 @@ section {
     padding: 1rem 0 1.5rem;
 }
 
+section:first-child{
+    margin-left: 10px;
+}
+
 .section-emoji {
     font-size: 70px;
     margin: 0 10px;
@@ -232,7 +236,6 @@ input:focus {
 
 .loading {
     width: 10rem;
-    animation-duration: 0.5s;
     margin-top: 1rem;
 }
 
