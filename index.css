@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    background-color: whitesmoke;
+} 
+
+/* LAYOUT */
+
+.container {
+    width: 450px;
+    margin: 10px auto;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(./Pictures/resturant-img-header.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 45px;
+    color: #ffffff;
+    height: 140px;
+}
+
+
+main {
+    position: relative;
+    padding: 2rem;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 1rem 0 1.5rem;
+}
+
+section:first-child{
+    margin-left: 20px;
+}
+
+.section-emoji {
+    font-size: 70px;
+    margin: 0 10px;
+    transition: all 1s ease-in;
+    /* border: 1px solid red; */
+}
+
+.section-emoji:hover {
+    transform: scale(1.3);
+}
+
+.section-text {
+    width: 300px;
+    padding: 10px 0;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.section-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 auto auto;
+    font-size: 23px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+    font-family: none;
+}
+
+.order-receipt h2,
+.order-text h2, .order-text h3,
+.total h3{
+    font-weight: 400;
+}
+
+.order-receipt {
+    display: none;
+    padding: 2rem;
+}
+
+.order-receipt.show {
+    display: block;
+}
+
+.order-receipt .order{
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.order-receipt .order-text {
+    padding: 10px 0 20px;
+    border-bottom: 1.5px solid #393333;
+}
+
+.order-text .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex ;
+    justify-content: space-between;
+    padding: 10px 0 40px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list p, .btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list .remove {
+    font-size: 14px;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.complete-btn {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background-color: #16DB99;
+    color: white;
+    transition: 1s;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.complete-btn:hover {
+    background-color: #0F8B5B;
+}
+
+/*FORM CONTAINER */ 
+.form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #757575;
+    width: 400px;
+    height: 330px;
+    margin:  auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 40px 1px black;
+}
+
+.form-container.show {
+    display: block;
+}
+
+.form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+}
+
+.form-text {
+    margin: 0.7rem 0 2rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px 0 10px 20px;
+}
+
+input::placeholder {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-div {
+    padding-top: 1.3rem;
+}
+
+.form-btn {
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+.loading-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 3rem auto;
+}
+
+.loading-label {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loading {
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.form-submit {
+    display: none;
+    padding: 1rem 2rem 5rem 2rem;
+}
+
+.form-submit.show {
+    display: block;
+}
+
+.form-submit h3 {
+    padding: 1.8rem 1rem;
+    text-align: center;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-style: 35px;
+    font-weight: 400;
+}
+
+/* TYPOGRAPHY */
+
+.header p,
+.section-text p,
+.header h1,
+.section-text h2,
+.section-text h3
+  {
+    font-weight: 400;
+}
+
+.header p {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.section-text h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-text p {
+    font-size: 16px;
+    color: #8b8b8b;
+}
