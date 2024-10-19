@@ -236,6 +236,7 @@ input:focus {
 
 .loading {
     width: 10rem;
+    animation-duration: 0.5s;
     margin-top: 1rem;
 }
 
