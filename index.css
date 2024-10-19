@@ -47,10 +47,6 @@ section {
     padding: 1rem 0 1.5rem;
 }
 
-section:first-child{
-    margin-left: 10px;
-}
-
 .section-emoji {
     font-size: 70px;
     margin: 0 10px;
