@@ -10,13 +10,13 @@ body {
     font-weight: 400;
     background-color: whitesmoke;
     max-width: 450px;
+    margin: 1px auto;
 } 
 
 /* LAYOUT */
 
 .container {
     width: 95%;
-    margin: 1px auto;
     background-color: #ffffff;
 }
 
@@ -46,10 +46,6 @@ section {
     align-items: center;
     border-bottom: 1px solid #d2d2d2;
     padding: 1rem 0 1.5rem;
-}
-
-section:first-child{
-    margin-left: 10px;
 }
 
 .section-emoji {
@@ -164,7 +160,7 @@ section:first-child{
     right: 0;
     bottom: 0;
     border: 1px solid #757575;
-    width: 85%;
+    max-width: 350px;
     height: 330px;
     margin: auto;
     border-radius: 10px;
