@@ -14,7 +14,6 @@ body {
 /* LAYOUT */
 
 .container {
-    width: 430px;
     max-width: 450px;
     margin: 1px auto;
     background-color: #ffffff;
