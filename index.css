@@ -17,6 +17,7 @@ body {
 
 .container {
     width: 95%;
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
