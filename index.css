@@ -9,12 +9,13 @@ body {
     font-family: "Smythe", system-ui;
     font-weight: 400;
     background-color: whitesmoke;
+    max-width: 450px;
 } 
 
 /* LAYOUT */
 
 .container {
-    max-width: 450px;
+    width: 95%;
     margin: 1px auto;
     background-color: #ffffff;
 }
@@ -163,9 +164,9 @@ section:first-child{
     right: 0;
     bottom: 0;
     border: 1px solid #757575;
-    width: 400px;
+    width: 85%;
     height: 330px;
-    margin:  auto;
+    margin: auto;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 1px 1px 40px 1px black;
