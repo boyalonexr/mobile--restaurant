@@ -49,8 +49,12 @@ section {
     padding: 1rem 0 1.5rem;
 }
 
+section:nth-of-type(1) {
+    padding-left: 1rem;
+}
+
 .section-emoji {
-    font-size: 70px;
+    font-size: 60px;
     margin: 0 10px;
     transition: all 1s ease-in;
 }
@@ -69,7 +73,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 auto auto;
+    margin: 20px 0;
+    margin-left: 10px;
     font-size: 23px;
     width: 30px;
     cursor: pointer;
@@ -78,6 +83,7 @@ section {
     border-radius: 50%;
     border: 1px solid #dedede;
 }
+
 
 .fa-light {
     font-family: none !important;
